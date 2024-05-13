@@ -1,0 +1,22 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                // "useBuiltIns": "usage", // 和 @babel/plugin-transform-runtime 互斥
+                // "corejs": "3.6.5",
+                "targets": [">0.01%", "edge>=50", "firefox>=53", "chrome>=53", "safari>=9", "chromeAndroid>=53", "iOS>=8"]
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "corejs": {
+                    "version": "3"
+                }
+            }
+        ]
+    ]
+}
